@@ -14,4 +14,4 @@ tests = do
    tests <- traverse testSpecs
     [ Data.Aeson.CommitTest.tests
     ]
-   pure (concat tests)
+   pure $ Data.Aeson.CommitTest.qcTests : concat tests

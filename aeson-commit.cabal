@@ -21,7 +21,7 @@ library
     src
   build-depends:
       base
-    , aeson
+    , aeson >= 1.4.5.0
     , mtl
     , text
   ghc-options:
@@ -43,9 +43,10 @@ test-suite tasty
     , containers
     , hspec
     , mtl
-    , some
+--    , some
     , tasty
     , tasty-hspec
+    , tasty-quickcheck
     , text
     , transformers
   main-is: Main.hs
